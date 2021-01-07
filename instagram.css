@@ -1,0 +1,84 @@
+*{padding: 0;
+  margin: 0;
+box-sizing: border-box;
+
+text-decoration: none;
+font-family: sans-serif;
+font-size: 14px;}
+
+body{width: 100%;min-height: 100vh;background: rgb(243, 243, 243);
+    margin: 0;padding:0;display: flex;justify-content: center;}
+#corpo{width: 60%;display:flex;align-items: center;
+justify-content:start;height: 100vh;}
+
+ 
+
+#celularGrande{width:50%;align-items: center;justify-content:center;
+display: flex;}
+
+#celularGrande img{width:50rem;}
+#direita{width: 50%;min-height: 34rem;display:flex;
+align-items:center;justify-content:space-around;flex-direction: column;}
+
+
+.duas{border:1px solid rgb(215, 240, 241);display: flex;
+justify-content: space-between;align-items: center;flex-direction:
+ column;width: 100%;padding:1.3rem 0;background-color: rgb(250, 251, 251);}
+
+ .duas:nth-child(1){
+     min-height: 19rem;
+ }
+
+ #imgPerfil{border-radius:50%;overflow: hidden;
+display: flex;justify-content:center;align-items: center;}
+#imgPerfil img{width:6rem;}
+
+#instagramLogo{height: 3rem;}
+#segunda{border:1px solid;background:gold;width:50%;height: 200px;}
+
+
+.instagram-login{background-color:rgb(13, 105, 180);padding:8px;
+    border-radius: 4px;color:white;}
+
+.instagram-logout{color:rgb(9, 108, 173);margin-top: 1rem;}    
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding:1.3rem 0;
+}
+
+.not-account{
+    color:rgb(160, 160, 160)
+}
+.link-blue{color:rgb(46, 46, 245);}
+
+.download{display:flex;width:100%;
+justify-content:space-evenly;align-items:center;
+padding:1rem;}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    
+}
+.app-download:nth-child(1){
+    background-image:url('apple-button.png');
+}
+.app-download:nth-child(2){
+    background-image: url('googleplay-button.png');
+}
+
+@media (max-width:1024px){
+#corpo{width:90%}}
+
+@media (max-width:650px){
+    body{background:white;}
+    #direita{width:100%}
+    #celularGrande{display:none;}
+    .duas{border:1px solid transparent;}
+}
